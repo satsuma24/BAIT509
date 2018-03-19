@@ -1,0 +1,20 @@
+  ● Bagging is a special case of random forests under which case?
+ When we choose the random subset made up of all predictors out of the total p predictors, bagging is equal to random forest.
+
+  ● What are the hyperparameters we can control for random forests?
+Number of branches: the number of m predictors out of p. Number of trees.
+
+  ● Suppose you have the following paired data of (x, y): (1,2), (1,5), (2,0). Which of the following are valid bootstrapped data sets? Why/why not?
+1. (1,0), (1,2), (1,5) is not a valid bootstrapped data set since (1,0) is not a observation in the data set (x,y)
+2. (1,2), (2,0) is not a valid bootstrapped data since there are only 2 pairs in the data set and it should be 3.
+3. (1,2), (1,2), (1,5) is a valid bootstrapped data.
+
+
+  ● For each of the above valid bootstapped data sets, which observations are out-of-bag (OOB)?
+for (1,2), (1,2), (1,5): (2,0) is OOB.
+
+  ● You make a random forest consisting of four trees. You obtain a new observation of predictors, and would like to predict the response. What would your prediction be in the following cases?
+      1. Regression: your trees make the following four predictions: 1,1,3,3.
+      2. Classification: your trees make the following four predictions: “A”, “A”, “B”, “C”.
+2 is average.
+A is the most popular one among all 3.
