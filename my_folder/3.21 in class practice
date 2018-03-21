@@ -1,0 +1,23 @@
+In-class exercises
+
+1.	Both are predicted to have the same productivity score of 75, but have the following probabilistic forecasts.
+It will be hard to choose from A and B through intuitive comparison.
+Candidate A:
+Since the density of A are concentrated on high values around 0.3~0.4, which means he is more probable to work around the productivity of 75, i.e. he is more stable to work in productivity score of 75.
+Pros is that he will not work very inefficient in productivity lower than 73. However, the cons is that he is less likely to work in the productivity over 77.
+Candidate B:
+Since the density of B are not concentrated, the productivity of B is of large variance than A, which means that B has unstable productivity scores.
+Pros are that he may work in very high productivity scores such as over 80, bringing more profits for the company. However, the cons are that he is also more likely to work in low productivity less than 70.
+
+2.	Two “non-overlapping” forecasts:
+ 
+In this case, choosing B over A has more pros than cons.
+Pros is that B has the mean productivity of 80 while A can only have the score of 60.
+Cons is that A has smaller variance than B has. Under real situations, if the company is to guarantee the clients of the productivity of both A and B, B is more likely to fail to meet the guaranteed score of productivity since B’s large variance will bring risks while A is more stable.
+Overall, I will choose B since we can set a baseline, e.g. score of 70, so that B will definitely work over this score while A cannot reach it. Choosing B may bring more productivity.
+
+
+3.	You’ve formed a probabilist forecast for a particular value of the predictors, displayed below as a density. You then collect test data for that same value of the predictor, indicated as the points below the density. What is the problem with the probabilistic forecast?
+
+The problem is that the collected test data are very biased (very high value of responses), so that the density based on the test data will also be highly biased. Thus, the probabilistic forecast will not be accurate.
+For example, we can reduce the k value in KNN to fix the problem.
