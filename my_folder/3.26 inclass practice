@@ -1,0 +1,12 @@
+1.	a new observation that has x1=6 and x2=10 will be classified into group A (red dots) since 6 < 7.5 from x1 perspective of margin.
+2.	margin size is 2
+3.	6, 7, 8, 9, 10 will receive penalty. All of them are the support factors.
+4.	
+  6: 0.25
+  7:0.25
+  8:1.25
+  9: 1.75
+  10: 2.25
+  Total penalty is: 5.75
+5.	Yes
+6.  Yes. If a line similar to diagnal line is set as classification boundary. 4,8 and 9 may be the support vectors since it may have a larger margin.
